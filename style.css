@@ -21,6 +21,7 @@
   
   body {
     background: radial-gradient(circle at 55% 55%, #FCD0DA, white);
+    overflow-x: hidden;
   }
 
   canvas {
@@ -220,8 +221,8 @@
         background: #FCD0DA;
         color: white;
       }
-      
-      /* Responsive adjustments */
+
+
       @media (max-width: 768px) {
         .wrapper {
           justify-content: center;
@@ -230,8 +231,11 @@
         .card {
           width: 100%;
         }
+
+        .card .info {
+          opacity: 1;
+        }
       }
-      
 
       .lightbox {
         display: none;
