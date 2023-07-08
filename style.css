@@ -17,6 +17,7 @@
     display: grid;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
   }
   
   body {
@@ -131,7 +132,7 @@
     .wrapper {
         display: flex;
         flex-wrap: wrap; /* Allow cards to wrap to the next line */
-        justify-content: space-around;
+        justify-content: center;
         margin: 20px auto; /* Add margin for spacing */
       }
       
@@ -150,6 +151,8 @@
         box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
         margin-right: 10px;
         margin-bottom: 20px; /* Add margin between the cards */
+        justify-self: center;
+        overflow: hidden;
       }
       
 
@@ -221,8 +224,8 @@
         background: #FCD0DA;
         color: white;
       }
-
-
+      
+      /* Responsive adjustments */
       @media (max-width: 768px) {
         .wrapper {
           justify-content: center;
@@ -236,6 +239,9 @@
           opacity: 1;
         }
       }
+      
+
+      
 
       .lightbox {
         display: none;
@@ -349,5 +355,3 @@
       .hidden {
         display: none;
       }
-      
-
