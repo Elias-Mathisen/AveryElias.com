@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avery & Elias</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+  <div id="heart">
+    <svg width="150" height="150" viewBox="0 0 150 150">
+      <g transform="translate(100 100)">
+        <path transform="translate(-75 -75)" stroke="white" stroke-width="10" fill="none" d="M92.71,7.27L92.71,7.27c-9.71-9.69-25.46-9.69-35.18,0L50,14.79l-7.54-7.52C32.75-2.42,17-2.42,7.29,7.27v0 c-9.71,9.69-9.71,25.41,0,35.1L50,85l42.71-42.63C102.43,32.68,102.43,16.96,92.71,7.27z"></path>
+      </g>
+    </svg>
+  </div>
+
+  <div id="container">
+    <canvas id="canvas"></canvas>
+    <div class="wrapper">
+      <div class="card">
+        <img src="Images/Legoland 26.06.23/cover.jpg" />
+        <div class="info">
+          <h1>Legoland</h1>
+          <p>Images from our trip to Legoland 26.06.2023. We went through the whole park and Sea Life :)</p>
+          <button class="view-album" data-directory="Images/Legoland 26.06.23">View Album</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Images/4th of July/cover.JPG" />
+        <div class="info">
+          <h1>4th of July</h1>
+          <p>Images from the 4th of July Celebration 04.07.2023 :)</p>
+          <button class="view-album" data-directory="Images/4th of July">View Album</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Images/San Diego Zoo Safari Park/cover.JPG" />
+        <div class="info">
+          <h1>San Diego Zoo Safari Park</h1>
+          <p>When we went to the Zoo together and time flew faster than anything :D</p>
+          <button class="view-album" data-directory="Images/San Diego Zoo Safari Park">View Album</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="lightbox hidden" id="lightbox">
+    <span class="lightbox-close" id="lightbox-close">&times;</span>
+    <div class="lightbox-image-container">
+      <img src="" alt="Lightbox Image" class="lightbox-image" id="lightbox-image">
+      <div class="lightbox-image-list" id="lightbox-image-list"></div>
+    </div>
+    <div class="lightbox-image-navigation">
+      <span class="lightbox-arrow lightbox-arrow-left" id="lightbox-arrow-left">&#10094;</span>
+      <span class="lightbox-arrow lightbox-arrow-right" id="lightbox-arrow-right">&#10095;</span>
+    </div>
+  </div>
+  
+  
+  
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <script src="script.js"></script>
+  <script src="hearts.js"></script>
+</body>
+</html>
